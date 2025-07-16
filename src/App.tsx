@@ -13,7 +13,7 @@ function App() {
       <div className="relative z-10 flex justify-center  w-full">
         <div className="flex min-h-svh flex-col items-center max-w-[1280px] w-full text-white">
 
-          <h1 className="text-2xl p-4 mb-4 mt-4 font-baseline bg-indigo-600 text-slate-200 w-full rounded-md shadow-md">
+          <h1 className="text-2xl p-4 mb-4 mt-4 font-baseline bg-indigo-700 text-slate-200 w-full rounded-md shadow-md">
             Myeloid APC Atlas
           </h1>
 
@@ -71,9 +71,9 @@ function App() {
               </li>
               {[
                 { name: "Nikita Rosendahl", email: "n.rosendahl@student.uq.edu.au" },
+                { name: "Kristen Radford", email: "kristen.radford@mater.uq.edu.au" },
                 { name: "Kelvin Tuong", email: "z.tuong@uq.edu.au" },
                 { name: "Norman Yap", email: "norman.yap@uq.edu.au" },
-                { name: "Kristen", email: "amos.tan@uq.edu.au" },
               ].map(({ name, email }) => (
                 <li key={email}>
                   <a
@@ -104,10 +104,10 @@ function App() {
               </a>
             </div>
 
-            {/* 🧬 GitHub */}
+            {/* 🐙 GitHub */}
             <div className="bg-slate-200 shadow-md rounded-lg p-6 space-y-2">
               <h2 className="text-xl font-semibold text-slate-900 flex items-center gap-2 mb-10">
-                🧬 <span>GitHub Repository</span>
+                🐙 <span>GitHub Repository</span>
               </h2>
               <p className="text-sm text-slate-800">
                 Explore the source code, workflows, and dataset integration tools used in this browser:
