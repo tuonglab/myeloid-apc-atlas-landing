@@ -7,7 +7,7 @@ function App() {
       style={{ backgroundImage: 'url(/myeloid-background.jpg)' }}
     >
       {/* 🔲 Dark overlay */}
-      <div className="absolute inset-0 bg-slate-300 opacity-94 z-0"></div>
+      <div className="absolute inset-0 bg-slate-300 opacity-85 z-0"></div>
 
       {/* 🧬 Main content wrapper */}
       <div className="relative z-10 flex justify-center  w-full">
