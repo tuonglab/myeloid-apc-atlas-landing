@@ -7,18 +7,18 @@ function App() {
       style={{ backgroundImage: 'url(/myeloid-background.jpg)' }}
     >
       {/* 🔲 Dark overlay */}
-      <div className="absolute inset-0 bg-slate-900 opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-slate-300 opacity-94 z-0"></div>
 
       {/* 🧬 Main content wrapper */}
       <div className="relative z-10 flex justify-center  w-full">
         <div className="flex min-h-svh flex-col items-center max-w-[1280px] w-full text-white">
 
-          <h1 className="text-2xl p-4 mb-4 mt-4 font-baseline bg-indigo-500 text-slate-200 w-full rounded-md shadow-md">
+          <h1 className="text-2xl p-4 mb-4 mt-4 font-baseline bg-indigo-600 text-slate-200 w-full rounded-md shadow-md">
             Myeloid APC Atlas
           </h1>
 
           {/* abstract */}
-          <div className="flex w-full flex-col bg-slate-300 h-[150px] shadow-md rounded-md justify-center">
+          <div className="flex w-full flex-col bg-slate-200 h-[150px] shadow-md rounded-md justify-center">
             <p className="text-center text-sm sm:text-baseline md:text-lg  p-5 font-light text-indigo-800">
               A curated single-cell atlas of myeloid antigen-presentation cells (APCs) in human cancer. This atlas was made through integration of myeloid APCs extracted from 36 publicly available datasets. The atlas comprises 498,023 cells from 589 samples across 12 solid tumour types, including primary and metastatic samples and associated healthy tissue.
             </p>
@@ -65,7 +65,7 @@ function App() {
           {/* Info sections */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full">
             {/* 📧 Email Section */}
-            <ul className="bg-slate-300 shadow-md rounded-lg p-6 space-y-4">
+            <ul className="bg-slate-200 shadow-md rounded-lg p-6 space-y-4">
               <li className="text-xl font-semibold text-slate-900 flex items-center gap-2">
                 📧 <span>Contact Emails</span>
               </li>
@@ -87,7 +87,7 @@ function App() {
             </ul>
 
             {/* 📄 Manuscript */}
-            <div className="bg-slate-300 shadow-md rounded-lg p-6 space-y-2">
+            <div className="bg-slate-200 shadow-md rounded-lg p-6 space-y-2">
               <h2 className="text-xl font-semibold text-slate-900 flex items-center gap-2 mb-10">
                 📄 <span>Manuscript</span>
               </h2>
@@ -105,7 +105,7 @@ function App() {
             </div>
 
             {/* 🧬 GitHub */}
-            <div className="bg-slate-300 shadow-md rounded-lg p-6 space-y-2">
+            <div className="bg-slate-200 shadow-md rounded-lg p-6 space-y-2">
               <h2 className="text-xl font-semibold text-slate-900 flex items-center gap-2 mb-10">
                 🧬 <span>GitHub Repository</span>
               </h2>
