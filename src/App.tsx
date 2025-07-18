@@ -3,15 +3,15 @@ import './App.css'
 function App() {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center "
-      style={{ backgroundImage: 'url(/myeloid-background.jpg)' }}
+      className="relative min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/myeloid-apc-atlas-landing/myeloid-background.jpg')" }}
     >
       {/* 🔲 Dark overlay */}
       <div className="absolute inset-0 bg-slate-300 opacity-85 z-0"></div>
 
       {/* 🧬 Main content wrapper */}
       <div className="relative z-10 flex justify-center  w-full">
-        <div className="flex min-h-svh flex-col items-center max-w-[1280px] w-full text-white">
+        <div className="flex min-h-svh flex-col items-center max-w-[1280px] w-full text-white mx-2">
 
           <h1 className="text-2xl p-4 mb-4 mt-4 font-baseline bg-indigo-700 text-slate-200 w-full rounded-md shadow-md">
             Myeloid APC Atlas
@@ -24,43 +24,55 @@ function App() {
             </p>
           </div>
 
-          {/* link to the datasets */}
-          <div className="flex w-full h-[300px] mt-8 gap-3 ">
+          {/* 🔗 Link to the datasets */}
+          <div className="flex w-full h-[400px] mt-8 gap-3">
             {[
               {
                 title: "Myeloid APC Atlas",
                 description: "498,023 cells including macrophages, monocytes and dendritic cells found in human tumours and associated tissues.",
+                image: "/myeloid-apc-atlas-landing/myeloid-umap.png",
+                link: "https://your-dataset-link.com/myeloid",
               },
               {
                 title: "DC Atlas",
                 description: "29,887 dendritic cells isolated from the complete Myeloid APC Atlas.",
+                image: "/myeloid-apc-atlas-landing/dc-umap2.png",
+                link: "https://your-dataset-link.com/dc",
               },
-            ].map(({ title, description }, idx) => (
-              <div key={idx} className="bg-slate-700 shadow-md rounded-lg overflow-auto group w-full ">
-                <div className="relative h-48 w-full ">
+            ].map(({ title, description, image, link }, idx) => (
+              <a
+                key={idx}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-slate-700 shadow-md rounded-lg overflow-hidden w-full transition duration-300 cursor-pointer"
+              >
+
+                  {/* 🔲 Overlay that darkens on hover */}
+              <div className="absolute flex justify-center items-center inset-0 bg-black opacity-0 group-hover:opacity-40 transition duration-300 z-10 rounded-lg pointer-events-none">
+                <span className="px-4 py-2 bg-indigo-700 text-white rounded-md duration-300 pointer-events-none">
+                  View Dataset
+                </span>
+              </div>
+
+                {/* 🖼️ Image */}
+                <div className="relative h-70 w-full bg-white flex z-0">
                   <img
-                    src="/subset-umap2.png"
-                    alt="Dataset Cover"
-                    className="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:brightness-50"
+                    src={image}
+                    alt={`${title} Cover`}
+                    className="w-full h-full object-contain"
                   />
-                  <a
-                    href="https://your-dataset-link.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300"
-                  >
-                    <span className="px-4 py-2 bg-black text-white rounded-md">
-                      View Dataset
-                    </span>
-                  </a>
                 </div>
-                <div className="p-4">
+
+                {/* 📝 Text content */}
+                <div className="p-4 relative z-20">
                   <h3 className="text-xl font-semibold text-slate-300">{title}</h3>
                   <p className="text-sm text-slate-300 mt-2">{description}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
+
 
           {/* Info sections */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full">
@@ -124,8 +136,8 @@ function App() {
           </div>
 
           {/* Footer */}
-          <footer className="w-full mt-8 bg-slate-700 border-t border-slate-800  shadow-md rounded-md">
-            <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm">
+          <footer className="w-full mt-8 bg-slate-700 mb-2 border-t border-slate-800  shadow-md rounded-md">
+            <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
               <div className="mb-4 md:mb-0">
                 <p>© {new Date().getFullYear()} Tuong Lab - Nikita Rosendahl</p>
                 <p className="text-xs text-gray-500">Built with Vite + React + TypeScript</p>
