@@ -83,9 +83,9 @@ function App() {
               </li>
               {[
                 { name: "Nikita Rosendahl", email: "n.rosendahl@student.uq.edu.au" },
-                { name: "Kristen Radford", email: "kristen.radford@mater.uq.edu.au" },
-                { name: "Kelvin Tuong", email: "z.tuong@uq.edu.au" },
                 { name: "Norman Yap", email: "norman.yap@uq.edu.au" },
+                { name: "Kelvin Tuong", email: "z.tuong@uq.edu.au" },
+                { name: "Kristen Radford", email: "kristen.radford@mater.uq.edu.au" },
               ].map(({ name, email }) => (
                 <li key={email}>
                   <a
@@ -112,7 +112,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-800 underline text-sm"
               >
-                Rosendahl et al., 2024 – Spatial transcriptomics in tumor microenvironments
+                Rosendahl et al., 2025 – Resolving cDC2 heterogeneity across human cancer atlases
               </a>
             </div>
 
@@ -130,7 +130,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-800 underline text-sm"
               >
-                github.com/nikita-rosendahl/cancermyeloidatlas
+                github.com/nikita-rosendahl/placeholder
               </a>
             </div>
           </div>
