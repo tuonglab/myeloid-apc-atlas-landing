@@ -110,16 +110,18 @@ function App() {
                 📄 <span>Manuscript</span>
               </h2>
               <p className="text-sm text-slate-900">
-                For full details on the dataset and analysis methods, refer to our published manuscript:
+                For full details on the dataset and analysis methods
+                {/* , refer to our published manuscript: */}
+              
               </p>
-              <a
+              {/* <a
                 href="https://doi.org/10.1234/example-citation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-800 underline text-sm"
               >
                 Rosendahl et al., 2025 – Resolving cDC2 heterogeneity across human cancer atlases
-              </a>
+              </a> */}
             </div>
 
             {/* 🐙 GitHub */}
@@ -136,7 +138,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-800 underline text-sm"
               >
-                github.com/nikita-rosendahl/placeholder
+                https://github.com/nikita-rosendahl/cancermyeloidatlas
               </a>
             </div>
           </div>
@@ -146,17 +148,14 @@ function App() {
             <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
               <div className="mb-4 md:mb-0">
                 <p>© {new Date().getFullYear()} Tuong Lab - Nikita Rosendahl</p>
-                <p className="text-xs text-gray-500">Built with Vite + React + TypeScript</p>
+                <p className="text-xs text-gray-500">Built with React</p>
               </div>
               <div className="flex space-x-4">
-                <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">
+                <a href="https://github.com/nikita-rosendahl/cancermyeloidatlas" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">
                   GitHub
                 </a>
-                <a href="mailto:norman.yap@uq.edu.au" className="hover:text-indigo-600">
+                <a href="mailto:n.rosendahl@student.uq.edu.au" className="hover:text-indigo-600">
                   Contact
-                </a>
-                <a href="/privacy" className="hover:text-indigo-600">
-                  Privacy
                 </a>
               </div>
             </div>
