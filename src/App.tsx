@@ -25,7 +25,8 @@ function App() {
           </div>
 
           {/* 🔗 Link to the datasets */}
-          <div className="flex w-full h-[400px] mt-8 gap-3">
+          <div className="flex flex-col md:flex-row w-full md:h-[400px] mt-8 gap-3">
+
             {[
               {
                 title: "Myeloid APC Atlas",
