@@ -30,15 +30,21 @@ function App() {
               {
                 title: "Myeloid APC Atlas",
                 description: "498,023 cells including macrophages, monocytes and dendritic cells found in human tumours and associated tissues.",
-                image: "/myeloid-apc-atlas-landing/myeloid-umap.png",
+                image: "/myeloid-apc-atlas-landing/umapAtlas_Share-1.png",
                 link: "https://your-dataset-link.com/myeloid",
               },
               {
                 title: "DC Atlas",
                 description: "29,887 dendritic cells isolated from the complete Myeloid APC Atlas.",
-                image: "/myeloid-apc-atlas-landing/dc-umap2.png",
+                image: "/myeloid-apc-atlas-landing/umapAllDC_Share-1.png",
                 link: "https://your-dataset-link.com/dc",
               },
+              {
+                title: "cDC2 atlas",
+                description: "16,643 cDC2 cells isolated from the complete Myeloid APC Atlas.",
+                image: "/myeloid-apc-atlas-landing/umapDC2_Share-1.png",
+                link: "https://your-dataset-link.com/dc",
+              }
             ].map(({ title, description, image, link }, idx) => (
               <a
                 key={idx}
